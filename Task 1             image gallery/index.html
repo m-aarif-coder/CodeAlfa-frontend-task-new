@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p> Frontend Development </p>
+    </header>
+
+    <div class="filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="city">City</button>
+        <button data-filter="travel">Travel</button>
+    </div>
+
+    <section class="gallery">
+
+        <div class="image-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+                 alt="Mountain">
+            <h3>Mountain View</h3>
+            <p>Nature</p>
+        </div>
+
+        <div class="image-card" data-category="city">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=80"
+                 alt="City">
+            <h3>City Lights</h3>
+            <p>City</p>
+        </div>
+
+        <div class="image-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                 alt="Beach">
+            <h3>Beautiful Beach</h3>
+            <p>Travel</p>
+        </div>
+
+        <div class="image-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+                 alt="Forest">
+            <h3>Green Forest</h3>
+            <p>Nature</p>
+        </div>
+
+        <div class="image-card" data-category="city">
+            <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=900&q=80"
+                 alt="City Street">
+            <h3>City Street</h3>
+            <p>City</p>
+        </div>
+
+        <div class="image-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+                 alt="Travel">
+            <h3>Travel Adventure</h3>
+            <p>Travel</p>
+        </div>
+
+    </section>
+
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img id="lightbox-img" src="" alt="">
+
+        <button class="next">&#10095;</button>
+
+        <p id="caption"></p>
+
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
